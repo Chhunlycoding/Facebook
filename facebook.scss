@@ -1,0 +1,676 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style-type: none;
+}
+// header
+#header{
+    width: 100%;
+    min-width: 1200px;
+    position: fixed;
+    background-color: white;
+    z-index: 1;
+    height: 55px;
+    box-shadow: 0px 0px 5px 0px gray;
+    .header-cotainer{
+        display: flex;
+        .header-container-left{
+            width: 23.33%;
+            min-width: 350px;
+            display: flex;
+            padding: 5px 5px;
+            
+            .header-container-left-logo{
+                
+                width: 40px;
+                height: 40px;
+                .header-container-left-logo-facebook{
+                    width: 100%;
+                    height: 100%;
+                    border: 50%;
+                }
+            }
+            .header-container-left-search{
+                width: 300px;
+                height: 40px;
+                margin-left: 5px;
+                .header-container-left-search-search-bar{
+                    width: 298px;
+                    height: 38px;
+                    border-radius: 20px;
+                    border: 1px solid gainsboro;
+                }
+            }
+        }
+        .header-container-center{
+            width: 53.33%;
+            min-width: 500px;
+            .header-container-center-navbar{
+                display: flex;
+                justify-content: center;
+                li{
+                    padding: 0px 40px;
+                    
+                    a{
+                        text-decoration: none;
+                        i{
+                            color: #1d73da;
+                            font-size: 25px;
+                            padding: 10px 7px;
+                        }
+                    }
+                }
+            }
+        }
+        .header-container-right{
+            width: 23.33%;
+            min-width: 350px;
+            .header-container-right-navbar{
+                display: flex;
+                justify-content: end;
+                li{
+                    border-radius: 50%;
+                    padding: 10px 8px;
+                    margin-left: 5px;
+                    a{ 
+                        text-decoration: none;
+                        i{
+                            
+                            font-size: 25px;
+                            color: black;
+                        }
+                    }
+                }   
+            }
+        }
+    }
+}
+
+// main
+#main {
+    width: 100%;
+    min-width: 1200px;
+    position: absolute;
+    top: 55px;
+    .main-container{
+        display: flex;
+        .main-container-left{
+            height: 180vh;
+            width: 23.33%;
+            min-width: 350px;
+            
+                ul{
+                    li{
+                        padding: 15px 20px;
+                        a{
+                            text-decoration: none;
+                            font-weight: 500;
+                            img{
+                                width: 45px;
+                                height: 45px;
+                                border-radius: 50%;
+                                border: 1px solid blue;
+                            }
+
+                             .title-facebooke{
+                                color: #03070c;
+                                padding: 0px 20px;
+                                font-size: 15px;
+                                position: relative;
+                                bottom: 15px;
+                                
+                             }
+                             i{
+                                font-size: 25px;
+                                position: relative;
+                                bottom: 10px;
+                                color: rgb(56, 88, 152);
+                             }
+                            
+                        }
+                    }
+                    hr{
+                        margin: 0px 10px;
+                    }
+                }
+        }
+        .main-container-center{
+            width: 53.33%;
+            min-width: 500px;
+            height: 180vh;
+            .main-container-cernter-story{
+                width: 70%;
+                min-width: 350px;
+                max-width: 680px;
+                border-radius: 5px;
+                height: 230px;
+                margin: 10px auto;
+                display: flex;
+                cursor: pointer;
+                .content-story{
+                    width: 128px;
+                    min-width: 28px;
+                    height: 228px;
+                    margin: auto;
+                    padding: 0px 2px;
+                    border-radius: 5px;
+                    .story{
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 5px;
+                    }
+                }
+            }
+            .main-container-cernter-staturs{
+                width: 70%;
+                min-width: 350px;
+                max-width: 680px;
+                border-radius: 5px;
+                height: 122px;
+                margin: 10px auto;
+                display: block;
+                background-color: white;
+                box-shadow: 0px 0px 5px 0px gray;
+                
+                .staturs{
+                    border-radius:5px 5px 0px 0px;
+                    width: 100%;
+                    height: 60px;
+                    margin-bottom: 4px;
+                    display: flex;
+                    
+                    .profile-staturs{
+                        width: 40px;
+                        height: 40px;
+                        padding:10px 20px 10px 5px;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                            border-radius: 50%;
+                        }
+                    }
+                    .write-staturs{
+                        width: 600px;
+                        height: 40px;
+                        padding-top: 10px;
+                        input{
+                            width: 100%;
+                            height: 100%;
+                            border-radius: 20px;
+                            border: 1px solid gainsboro;
+                            background-color: #cccfce;
+                        }
+                    }
+                }
+                .live-photo-felling{
+                    border-radius: 0px 0px 0px 5px;
+                    margin-top: 8px;
+                    margin-bottom: 0px;
+                    width: 100%;
+                    height: 54px;
+                    display: flex;
+                    .live-videos{
+                        
+                        width: 220px;
+                        height: 40px;
+                        
+                        .videos{
+                            font-size: 25px;
+                            color: red;
+                            position: relative;
+                            top: 15px;
+                            left: 10px;
+                        }
+                        span{
+                            color: rgb(173, 175, 177);
+                            position: relative;
+                            top: 10px;
+                            left: 10px;
+                        }
+                    }
+                    .live-videos:hover{
+                        position: relative;
+                        top: 8px;
+                        width: 220px;
+                        height: 38px;
+                        border-radius: 10px;
+                        background-color: #999b9a;
+                        cursor: pointer;
+                    }
+
+                    .photo{
+                        
+                        width: 220px;
+                        height: 40px;
+                        
+                        .photo-videos{
+                            font-size: 25px;
+                            color: rgb(49, 170, 73);
+                            position: relative;
+                            top: 15px;
+                            left: 10px;
+                        }
+                        span{
+                            color: rgb(173, 175, 177);
+                            position: relative;
+                            top: 10px;
+                            left: 10px;
+                        }
+                    }
+                    .photo:hover{
+                        position: relative;
+                        top: 8px;
+                        width: 220px;
+                        height: 38px;
+                        border-radius: 10px;
+                        background-color: #999b9a;
+                        cursor: pointer;
+                    }
+
+                    .felling{
+                        
+                        width: 220px;
+                        height: 40px;
+                        
+                        .emoji{
+                            font-size: 25px;
+                            color: rgb(211, 214, 14);
+                            position: relative;
+                            top: 15px;
+                            left: 10px;
+                        }
+                        span{
+                            color: rgb(173, 175, 177);
+                            position: relative;
+                            top: 10px;
+                            left: 10px;
+                        }
+                    }
+                    .felling:hover{
+                        position: relative;
+                        top: 8px;
+                        width: 220px;
+                        height: 38px;
+                        border-radius: 10px;
+                        background-color: #999b9a;
+                        cursor: pointer;
+                    }
+                }
+            }
+            .main-container-create-room{
+                width: 70%;
+                min-width: 350px;
+                max-width: 680px;
+                border-radius: 5px;
+                height: 65px;
+                margin: 10px auto;
+                display: flex;
+                box-shadow: 0px 0px 5px 0px gray;
+                background-color: #f9fcff;
+                .create-room{
+                    margin: 10px 10px;
+                    width: 142px;
+                    height: 40px;
+                    background-color: #f1f5f3;
+                    border-radius: 20px;
+                    border: 1px solid blue;
+                    .video-plus{
+                        position: relative;
+                        top: 10px;
+                        left: 5px;
+                        font-size: 20px;
+                        color: rgb(28, 92, 187);
+                    }
+                    span{
+                        position: relative;
+                        left: 5px;
+                        top: 8px;
+                        color: rgb(48,65,190);
+                    }
+                }
+
+                .room{
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    margin: 10px;
+                    .profile-room{
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 50%;
+                    }
+                }
+            }
+
+            .main-container-facebook-content{
+                width: 70%;
+                min-width: 350px;
+                max-width: 680px;
+                border-radius: 5px ;
+                background-color: #1d73da;
+                height: 820px;
+                margin: 10px auto;
+                display: block;
+                .header-content{
+                    width: 100%;
+                    height: 132px;
+                    background-color: #f1f5f3;
+                    border-radius: 5px 5px 0px 0px;
+                    border: 1px solid rgb(167, 163, 163);
+                    .account-profile{
+                        display: flex;
+                        .profile{
+                            width: 40px;
+                            height: 40px;
+                            border-radius: 50%;
+                            border: 1px solid blue;
+                            margin: 10px 10px;
+                            img{
+                                width: 100%;
+                                height: 100%;
+                                border-radius: 50%;
+                            }
+                        }
+                        span{
+                            font-size: 15px;
+                            font-weight: 600;
+                            color: rgb(5, 5, 5);
+                            margin-top: 20px;
+                        }
+                    }
+                    .title{
+                        margin: 10px 10px;
+                    }
+                }
+                .main-content{
+                    width: 100%;
+                    height: 625px;
+                    background-color: #f1f5f3;
+                    border: 1px solid rgb(167, 163, 163);
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                .footer-content{
+                    width: 100%;
+                    height: 85px;
+                    background-color: #f1f5f3;
+                    border-radius: 0px 0px 5px 5px;
+                    border: 1px solid rgb(167, 163, 163);
+                    .result-react{
+                        width: 100%;
+                        height: 40px;
+                        i{
+                            color: rgb(240, 15, 15);
+                            font-size: 20px;
+                            margin-top: 5px;
+                        }
+                        span{
+                            padding-left: 2px;
+                            margin-top: 2px;
+                        }
+                    }
+                    .react-comment-share{
+                        width: 100%;
+                        height: 45px;
+                        display: flex;
+                        .love{
+                            width: 220px;
+                            height: 35px;
+                            
+                            text-align: center;
+                            margin-top: 5px;
+                            i{
+                                margin-top: 10px;
+                                padding-right: 5px;
+                                color: red;
+                            }
+                            span{
+                                color: red;
+                                font-weight: 400;
+                            }
+                        }
+                        .love:hover{
+                            width: 220px;
+                            height: 35px;
+                            background-color: #82858a;
+                            text-align: center;
+                            margin-top: 5px;
+                            border-radius: 10px;
+                            cursor: pointer;
+                        }
+
+
+                        .comment{
+                            width: 220px;
+                            height: 35px;
+                            
+                            text-align: center;
+                            margin-top: 5px;
+                            i{
+                                margin-top: 10px;
+                                padding-right: 5px;
+                                
+                            }
+                            span{
+                                font-weight: 400;
+                            }
+                        }
+                        .comment:hover{
+                            width: 220px;
+                            height: 35px;
+                            background-color: #82858a;
+                            text-align: center;
+                            margin-top: 5px;
+                            border-radius: 10px;
+                            cursor: pointer;
+                        }
+
+                        .share{
+                            width: 220px;
+                            height: 35px;
+                            
+                            text-align: center;
+                            margin-top: 5px;
+                            i{
+                                margin-top: 10px;
+                                padding-right: 5px;
+                                
+                            }
+                            span{
+                                font-weight: 400;
+                            }
+                            .menu-share{
+                               
+                                position: relative;
+                                top: 15px;
+                                right: 110px;
+                                width: 360px;
+                                height: 315px;
+                                border-radius: 10px;
+                                background-color: #eaf3ee;
+                                border: 1px solid rgb(160, 156, 156);
+                                .share-now{
+                                    padding: 10px 0px 0px 10px;
+                                    display: flex;
+                                    i{
+                                        font-size: 15px;
+                                        
+                                    }
+                                    p{
+                                        font-size: 15px;
+                                        color:  rgb(5, 5, 5);
+                                        padding: 10px 10px 0px 10px;
+                                        font-weight: 500;
+                                    }
+                                }
+                                .share-story{
+                                    padding: 10px 0px 0px 10px;
+                                    display: flex;
+                                    i{
+                                        font-size: 15px;
+                                        
+                                    }
+                                    p{
+                                        font-size: 15px;
+                                        color:  rgb(5, 5, 5);
+                                        padding: 10px 0px 0px 10px;
+                                        font-weight: 500;
+                                    }
+                                }
+                                .send-messenger{
+                                    padding: 10px 0px 0px 10px;
+                                    display: flex;
+                                    i{
+                                        font-size: 15px;
+                                        
+                                    }
+                                    p{
+                                        font-size: 15px;
+                                        color:  rgb(5, 5, 5);
+                                        padding: 10px 0px 0px 10px;
+                                        font-weight: 500;
+                                    }
+                                }
+                                .More-options{
+                                    padding: 10px 0px 0px 10px;
+                                    display: flex;
+                                    i{
+                                        font-size: 15px;
+                                        
+                                    }
+                                    p{
+                                        font-size: 15px;
+                                        color:  rgb(5, 5, 5);
+                                        padding: 10px 0px 0px 10px;
+                                        font-weight: 500;
+                                    }
+                                }
+                                .share-page{
+                                    padding: 10px 0px 0px 10px;
+                                    display: flex;
+                                    i{
+                                        font-size: 15px;
+                                        
+                                    }
+                                    p{
+                                        font-size: 15px;
+                                        color:  rgb(5, 5, 5);
+                                        padding: 10px 0px 0px 10px;
+                                        font-weight: 500;
+                                    }
+                                }
+                                .copy-link{
+                                    padding: 10px 0px 0px 10px;
+                                    display: flex;
+                                    i{
+                                        font-size: 15px;
+                                        
+                                    }
+                                    p{
+                                        font-size: 15px;
+                                        color:  rgb(5, 5, 5);
+                                        padding: 10px 0px 0px 10px;
+                                        font-weight: 500;
+                                    }
+                                }
+                                .share-via{
+                                    padding: 10px 0px 0px 10px;
+                                    display: flex;
+                                    i{
+                                        font-size: 15px;
+                                        
+                                    }
+                                    p{
+                                        font-size: 15px;
+                                        color:  rgb(5, 5, 5);
+                                        padding: 10px 0px 0px 10px;
+                                        font-weight: 500;
+                                    }
+                                }
+                            }
+                        }
+                        .share:hover{
+                            width: 220px;
+                            height: 35px;
+                            background-color: #82858a;
+                            text-align: center;
+                            margin-top: 5px;
+                            border-radius: 10px;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+        .main-container-right{
+            width: 23.33%;
+            min-width: 350px;
+            height: 180vh;
+            background-color: white;
+            .main-container-right-sponsor{
+                width: 100%;
+                min-height: 350px;
+                height: 320px;
+                p{
+                    font-size: 17px;
+                    font-weight: 600;
+                    color: rgb(5, 5, 5);
+                    padding: 10px  30px;
+                }
+                .main-sponsored{
+                    display: flex;
+                    .sposored{
+                        width: 130px;
+                        height: 130px;
+                        background-color: #82858a;
+                        margin: 5px 30px 20px 30px;
+                        border-radius: 10px;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                            border-radius: 10px;
+                        }
+                    }
+                    p{
+                        font-size: 17px;
+                        font-weight: 600;
+                        color: rgb(5, 5, 5);
+                        padding-top: 50px;
+                    }
+                    
+                }
+            }
+            hr{
+                margin-top: 10px;
+            }
+            .main-container-right-contact{
+                display: block;
+                .profile-messenger{
+                    margin: 10px 10px;
+                    display: flex;
+                    .contact{
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                        background-color: #82858a;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                            border-radius: 50%;
+                        }
+                    }
+                    p{
+                        font-size: 17px;
+                        font-weight: 600;
+                        color: rgb(5, 5, 5);
+                        padding: 10px; 
+                    }
+                }
+            }
+        }
+    }
+}

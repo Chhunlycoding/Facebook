@@ -1,0 +1,637 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+#header {
+  width: 100%;
+  min-width: 1200px;
+  position: fixed;
+  background-color: white;
+  z-index: 1;
+  height: 55px;
+  box-shadow: 0px 0px 5px 0px gray;
+}
+#header .header-cotainer {
+  display: flex;
+}
+#header .header-cotainer .header-container-left {
+  width: 23.33%;
+  min-width: 350px;
+  display: flex;
+  padding: 5px 5px;
+}
+#header .header-cotainer .header-container-left .header-container-left-logo {
+  width: 40px;
+  height: 40px;
+}
+#header .header-cotainer .header-container-left .header-container-left-logo .header-container-left-logo-facebook {
+  width: 100%;
+  height: 100%;
+  border: 50%;
+}
+#header .header-cotainer .header-container-left .header-container-left-search {
+  width: 300px;
+  height: 40px;
+  margin-left: 5px;
+}
+#header .header-cotainer .header-container-left .header-container-left-search .header-container-left-search-search-bar {
+  width: 298px;
+  height: 38px;
+  border-radius: 20px;
+  border: 1px solid gainsboro;
+}
+#header .header-cotainer .header-container-center {
+  width: 53.33%;
+  min-width: 500px;
+}
+#header .header-cotainer .header-container-center .header-container-center-navbar {
+  display: flex;
+  justify-content: center;
+}
+#header .header-cotainer .header-container-center .header-container-center-navbar li {
+  padding: 0px 40px;
+}
+#header .header-cotainer .header-container-center .header-container-center-navbar li a {
+  text-decoration: none;
+}
+#header .header-cotainer .header-container-center .header-container-center-navbar li a i {
+  color: #1d73da;
+  font-size: 25px;
+  padding: 10px 7px;
+}
+#header .header-cotainer .header-container-right {
+  width: 23.33%;
+  min-width: 350px;
+}
+#header .header-cotainer .header-container-right .header-container-right-navbar {
+  display: flex;
+  justify-content: end;
+}
+#header .header-cotainer .header-container-right .header-container-right-navbar li {
+  border-radius: 50%;
+  padding: 10px 8px;
+  margin-left: 5px;
+}
+#header .header-cotainer .header-container-right .header-container-right-navbar li a {
+  text-decoration: none;
+}
+#header .header-cotainer .header-container-right .header-container-right-navbar li a i {
+  font-size: 25px;
+  color: black;
+}
+
+#main {
+  width: 100%;
+  min-width: 1200px;
+  position: absolute;
+  top: 55px;
+}
+#main .main-container {
+  display: flex;
+}
+#main .main-container .main-container-left {
+  height: 180vh;
+  width: 23.33%;
+  min-width: 350px;
+}
+#main .main-container .main-container-left ul li {
+  padding: 15px 20px;
+}
+#main .main-container .main-container-left ul li a {
+  text-decoration: none;
+  font-weight: 500;
+}
+#main .main-container .main-container-left ul li a img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 1px solid blue;
+}
+#main .main-container .main-container-left ul li a .title-facebooke {
+  color: #03070c;
+  padding: 0px 20px;
+  font-size: 15px;
+  position: relative;
+  bottom: 15px;
+}
+#main .main-container .main-container-left ul li a i {
+  font-size: 25px;
+  position: relative;
+  bottom: 10px;
+  color: rgb(56, 88, 152);
+}
+#main .main-container .main-container-left ul hr {
+  margin: 0px 10px;
+}
+#main .main-container .main-container-center {
+  width: 53.33%;
+  min-width: 500px;
+  height: 180vh;
+}
+#main .main-container .main-container-center .main-container-cernter-story {
+  width: 70%;
+  min-width: 350px;
+  max-width: 680px;
+  border-radius: 5px;
+  height: 230px;
+  margin: 10px auto;
+  display: flex;
+  cursor: pointer;
+}
+#main .main-container .main-container-center .main-container-cernter-story .content-story {
+  width: 128px;
+  min-width: 28px;
+  height: 228px;
+  margin: auto;
+  padding: 0px 2px;
+  border-radius: 5px;
+}
+#main .main-container .main-container-center .main-container-cernter-story .content-story .story {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+#main .main-container .main-container-center .main-container-cernter-staturs {
+  width: 70%;
+  min-width: 350px;
+  max-width: 680px;
+  border-radius: 5px;
+  height: 122px;
+  margin: 10px auto;
+  display: block;
+  background-color: white;
+  box-shadow: 0px 0px 5px 0px gray;
+}
+#main .main-container .main-container-center .main-container-cernter-staturs .staturs {
+  border-radius: 5px 5px 0px 0px;
+  width: 100%;
+  height: 60px;
+  margin-bottom: 4px;
+  display: flex;
+}
+#main .main-container .main-container-center .main-container-cernter-staturs .staturs .profile-staturs {
+  width: 40px;
+  height: 40px;
+  padding: 10px 20px 10px 5px;
+}
+#main .main-container .main-container-center .main-container-cernter-staturs .staturs .profile-staturs img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+#main .main-container .main-container-center .main-container-cernter-staturs .staturs .write-staturs {
+  width: 600px;
+  height: 40px;
+  padding-top: 10px;
+}
+#main .main-container .main-container-center .main-container-cernter-staturs .staturs .write-staturs input {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  border: 1px solid gainsboro;
+  background-color: #cccfce;
+}
+#main .main-container .main-container-center .main-container-cernter-staturs .live-photo-felling {
+  border-radius: 0px 0px 0px 5px;
+  margin-top: 8px;
+  margin-bottom: 0px;
+  width: 100%;
+  height: 54px;
+  display: flex;
+}
+#main .main-container .main-container-center .main-container-cernter-staturs .live-photo-felling .live-videos {
+  width: 220px;
+  height: 40px;
+}
+#main .main-container .main-container-center .main-container-cernter-staturs .live-photo-felling .live-videos .videos {
+  font-size: 25px;
+  color: red;
+  position: relative;
+  top: 15px;
+  left: 10px;
+}
+#main .main-container .main-container-center .main-container-cernter-staturs .live-photo-felling .live-videos span {
+  color: rgb(173, 175, 177);
+  position: relative;
+  top: 10px;
+  left: 10px;
+}
+#main .main-container .main-container-center .main-container-cernter-staturs .live-photo-felling .live-videos:hover {
+  position: relative;
+  top: 8px;
+  width: 220px;
+  height: 38px;
+  border-radius: 10px;
+  background-color: #999b9a;
+  cursor: pointer;
+}
+#main .main-container .main-container-center .main-container-cernter-staturs .live-photo-felling .photo {
+  width: 220px;
+  height: 40px;
+}
+#main .main-container .main-container-center .main-container-cernter-staturs .live-photo-felling .photo .photo-videos {
+  font-size: 25px;
+  color: rgb(49, 170, 73);
+  position: relative;
+  top: 15px;
+  left: 10px;
+}
+#main .main-container .main-container-center .main-container-cernter-staturs .live-photo-felling .photo span {
+  color: rgb(173, 175, 177);
+  position: relative;
+  top: 10px;
+  left: 10px;
+}
+#main .main-container .main-container-center .main-container-cernter-staturs .live-photo-felling .photo:hover {
+  position: relative;
+  top: 8px;
+  width: 220px;
+  height: 38px;
+  border-radius: 10px;
+  background-color: #999b9a;
+  cursor: pointer;
+}
+#main .main-container .main-container-center .main-container-cernter-staturs .live-photo-felling .felling {
+  width: 220px;
+  height: 40px;
+}
+#main .main-container .main-container-center .main-container-cernter-staturs .live-photo-felling .felling .emoji {
+  font-size: 25px;
+  color: rgb(211, 214, 14);
+  position: relative;
+  top: 15px;
+  left: 10px;
+}
+#main .main-container .main-container-center .main-container-cernter-staturs .live-photo-felling .felling span {
+  color: rgb(173, 175, 177);
+  position: relative;
+  top: 10px;
+  left: 10px;
+}
+#main .main-container .main-container-center .main-container-cernter-staturs .live-photo-felling .felling:hover {
+  position: relative;
+  top: 8px;
+  width: 220px;
+  height: 38px;
+  border-radius: 10px;
+  background-color: #999b9a;
+  cursor: pointer;
+}
+#main .main-container .main-container-center .main-container-create-room {
+  width: 70%;
+  min-width: 350px;
+  max-width: 680px;
+  border-radius: 5px;
+  height: 65px;
+  margin: 10px auto;
+  display: flex;
+  box-shadow: 0px 0px 5px 0px gray;
+  background-color: #f9fcff;
+}
+#main .main-container .main-container-center .main-container-create-room .create-room {
+  margin: 10px 10px;
+  width: 142px;
+  height: 40px;
+  background-color: #f1f5f3;
+  border-radius: 20px;
+  border: 1px solid blue;
+}
+#main .main-container .main-container-center .main-container-create-room .create-room .video-plus {
+  position: relative;
+  top: 10px;
+  left: 5px;
+  font-size: 20px;
+  color: rgb(28, 92, 187);
+}
+#main .main-container .main-container-center .main-container-create-room .create-room span {
+  position: relative;
+  left: 5px;
+  top: 8px;
+  color: rgb(48, 65, 190);
+}
+#main .main-container .main-container-center .main-container-create-room .room {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 10px;
+}
+#main .main-container .main-container-center .main-container-create-room .room .profile-room {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+#main .main-container .main-container-center .main-container-facebook-content {
+  width: 70%;
+  min-width: 350px;
+  max-width: 680px;
+  border-radius: 5px;
+  background-color: #1d73da;
+  height: 820px;
+  margin: 10px auto;
+  display: block;
+}
+#main .main-container .main-container-center .main-container-facebook-content .header-content {
+  width: 100%;
+  height: 132px;
+  background-color: #f1f5f3;
+  border-radius: 5px 5px 0px 0px;
+  border: 1px solid rgb(167, 163, 163);
+}
+#main .main-container .main-container-center .main-container-facebook-content .header-content .account-profile {
+  display: flex;
+}
+#main .main-container .main-container-center .main-container-facebook-content .header-content .account-profile .profile {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid blue;
+  margin: 10px 10px;
+}
+#main .main-container .main-container-center .main-container-facebook-content .header-content .account-profile .profile img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+#main .main-container .main-container-center .main-container-facebook-content .header-content .account-profile span {
+  font-size: 15px;
+  font-weight: 600;
+  color: rgb(5, 5, 5);
+  margin-top: 20px;
+}
+#main .main-container .main-container-center .main-container-facebook-content .header-content .title {
+  margin: 10px 10px;
+}
+#main .main-container .main-container-center .main-container-facebook-content .main-content {
+  width: 100%;
+  height: 625px;
+  background-color: #f1f5f3;
+  border: 1px solid rgb(167, 163, 163);
+}
+#main .main-container .main-container-center .main-container-facebook-content .main-content img {
+  width: 100%;
+  height: 100%;
+}
+#main .main-container .main-container-center .main-container-facebook-content .footer-content {
+  width: 100%;
+  height: 85px;
+  background-color: #f1f5f3;
+  border-radius: 0px 0px 5px 5px;
+  border: 1px solid rgb(167, 163, 163);
+}
+#main .main-container .main-container-center .main-container-facebook-content .footer-content .result-react {
+  width: 100%;
+  height: 40px;
+}
+#main .main-container .main-container-center .main-container-facebook-content .footer-content .result-react i {
+  color: rgb(240, 15, 15);
+  font-size: 20px;
+  margin-top: 5px;
+}
+#main .main-container .main-container-center .main-container-facebook-content .footer-content .result-react span {
+  padding-left: 2px;
+  margin-top: 2px;
+}
+#main .main-container .main-container-center .main-container-facebook-content .footer-content .react-comment-share {
+  width: 100%;
+  height: 45px;
+  display: flex;
+}
+#main .main-container .main-container-center .main-container-facebook-content .footer-content .react-comment-share .love {
+  width: 220px;
+  height: 35px;
+  text-align: center;
+  margin-top: 5px;
+}
+#main .main-container .main-container-center .main-container-facebook-content .footer-content .react-comment-share .love i {
+  margin-top: 10px;
+  padding-right: 5px;
+  color: red;
+}
+#main .main-container .main-container-center .main-container-facebook-content .footer-content .react-comment-share .love span {
+  color: red;
+  font-weight: 400;
+}
+#main .main-container .main-container-center .main-container-facebook-content .footer-content .react-comment-share .love:hover {
+  width: 220px;
+  height: 35px;
+  background-color: #82858a;
+  text-align: center;
+  margin-top: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+#main .main-container .main-container-center .main-container-facebook-content .footer-content .react-comment-share .comment {
+  width: 220px;
+  height: 35px;
+  text-align: center;
+  margin-top: 5px;
+}
+#main .main-container .main-container-center .main-container-facebook-content .footer-content .react-comment-share .comment i {
+  margin-top: 10px;
+  padding-right: 5px;
+}
+#main .main-container .main-container-center .main-container-facebook-content .footer-content .react-comment-share .comment span {
+  font-weight: 400;
+}
+#main .main-container .main-container-center .main-container-facebook-content .footer-content .react-comment-share .comment:hover {
+  width: 220px;
+  height: 35px;
+  background-color: #82858a;
+  text-align: center;
+  margin-top: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+#main .main-container .main-container-center .main-container-facebook-content .footer-content .react-comment-share .share {
+  width: 220px;
+  height: 35px;
+  text-align: center;
+  margin-top: 5px;
+}
+#main .main-container .main-container-center .main-container-facebook-content .footer-content .react-comment-share .share i {
+  margin-top: 10px;
+  padding-right: 5px;
+}
+#main .main-container .main-container-center .main-container-facebook-content .footer-content .react-comment-share .share span {
+  font-weight: 400;
+}
+#main .main-container .main-container-center .main-container-facebook-content .footer-content .react-comment-share .share .menu-share {
+  position: relative;
+  top: 15px;
+  right: 110px;
+  width: 360px;
+  height: 315px;
+  border-radius: 10px;
+  background-color: #eaf3ee;
+  border: 1px solid rgb(160, 156, 156);
+}
+#main .main-container .main-container-center .main-container-facebook-content .footer-content .react-comment-share .share .menu-share .share-now {
+  padding: 10px 0px 0px 10px;
+  display: flex;
+}
+#main .main-container .main-container-center .main-container-facebook-content .footer-content .react-comment-share .share .menu-share .share-now i {
+  font-size: 15px;
+}
+#main .main-container .main-container-center .main-container-facebook-content .footer-content .react-comment-share .share .menu-share .share-now p {
+  font-size: 15px;
+  color: rgb(5, 5, 5);
+  padding: 10px 10px 0px 10px;
+  font-weight: 500;
+}
+#main .main-container .main-container-center .main-container-facebook-content .footer-content .react-comment-share .share .menu-share .share-story {
+  padding: 10px 0px 0px 10px;
+  display: flex;
+}
+#main .main-container .main-container-center .main-container-facebook-content .footer-content .react-comment-share .share .menu-share .share-story i {
+  font-size: 15px;
+}
+#main .main-container .main-container-center .main-container-facebook-content .footer-content .react-comment-share .share .menu-share .share-story p {
+  font-size: 15px;
+  color: rgb(5, 5, 5);
+  padding: 10px 0px 0px 10px;
+  font-weight: 500;
+}
+#main .main-container .main-container-center .main-container-facebook-content .footer-content .react-comment-share .share .menu-share .send-messenger {
+  padding: 10px 0px 0px 10px;
+  display: flex;
+}
+#main .main-container .main-container-center .main-container-facebook-content .footer-content .react-comment-share .share .menu-share .send-messenger i {
+  font-size: 15px;
+}
+#main .main-container .main-container-center .main-container-facebook-content .footer-content .react-comment-share .share .menu-share .send-messenger p {
+  font-size: 15px;
+  color: rgb(5, 5, 5);
+  padding: 10px 0px 0px 10px;
+  font-weight: 500;
+}
+#main .main-container .main-container-center .main-container-facebook-content .footer-content .react-comment-share .share .menu-share .More-options {
+  padding: 10px 0px 0px 10px;
+  display: flex;
+}
+#main .main-container .main-container-center .main-container-facebook-content .footer-content .react-comment-share .share .menu-share .More-options i {
+  font-size: 15px;
+}
+#main .main-container .main-container-center .main-container-facebook-content .footer-content .react-comment-share .share .menu-share .More-options p {
+  font-size: 15px;
+  color: rgb(5, 5, 5);
+  padding: 10px 0px 0px 10px;
+  font-weight: 500;
+}
+#main .main-container .main-container-center .main-container-facebook-content .footer-content .react-comment-share .share .menu-share .share-page {
+  padding: 10px 0px 0px 10px;
+  display: flex;
+}
+#main .main-container .main-container-center .main-container-facebook-content .footer-content .react-comment-share .share .menu-share .share-page i {
+  font-size: 15px;
+}
+#main .main-container .main-container-center .main-container-facebook-content .footer-content .react-comment-share .share .menu-share .share-page p {
+  font-size: 15px;
+  color: rgb(5, 5, 5);
+  padding: 10px 0px 0px 10px;
+  font-weight: 500;
+}
+#main .main-container .main-container-center .main-container-facebook-content .footer-content .react-comment-share .share .menu-share .copy-link {
+  padding: 10px 0px 0px 10px;
+  display: flex;
+}
+#main .main-container .main-container-center .main-container-facebook-content .footer-content .react-comment-share .share .menu-share .copy-link i {
+  font-size: 15px;
+}
+#main .main-container .main-container-center .main-container-facebook-content .footer-content .react-comment-share .share .menu-share .copy-link p {
+  font-size: 15px;
+  color: rgb(5, 5, 5);
+  padding: 10px 0px 0px 10px;
+  font-weight: 500;
+}
+#main .main-container .main-container-center .main-container-facebook-content .footer-content .react-comment-share .share .menu-share .share-via {
+  padding: 10px 0px 0px 10px;
+  display: flex;
+}
+#main .main-container .main-container-center .main-container-facebook-content .footer-content .react-comment-share .share .menu-share .share-via i {
+  font-size: 15px;
+}
+#main .main-container .main-container-center .main-container-facebook-content .footer-content .react-comment-share .share .menu-share .share-via p {
+  font-size: 15px;
+  color: rgb(5, 5, 5);
+  padding: 10px 0px 0px 10px;
+  font-weight: 500;
+}
+#main .main-container .main-container-center .main-container-facebook-content .footer-content .react-comment-share .share:hover {
+  width: 220px;
+  height: 35px;
+  background-color: #82858a;
+  text-align: center;
+  margin-top: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+#main .main-container .main-container-right {
+  width: 23.33%;
+  min-width: 350px;
+  height: 180vh;
+  background-color: white;
+}
+#main .main-container .main-container-right .main-container-right-sponsor {
+  width: 100%;
+  min-height: 350px;
+  height: 320px;
+}
+#main .main-container .main-container-right .main-container-right-sponsor p {
+  font-size: 17px;
+  font-weight: 600;
+  color: rgb(5, 5, 5);
+  padding: 10px 30px;
+}
+#main .main-container .main-container-right .main-container-right-sponsor .main-sponsored {
+  display: flex;
+}
+#main .main-container .main-container-right .main-container-right-sponsor .main-sponsored .sposored {
+  width: 130px;
+  height: 130px;
+  background-color: #82858a;
+  margin: 5px 30px 20px 30px;
+  border-radius: 10px;
+}
+#main .main-container .main-container-right .main-container-right-sponsor .main-sponsored .sposored img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+#main .main-container .main-container-right .main-container-right-sponsor .main-sponsored p {
+  font-size: 17px;
+  font-weight: 600;
+  color: rgb(5, 5, 5);
+  padding-top: 50px;
+}
+#main .main-container .main-container-right hr {
+  margin-top: 10px;
+}
+#main .main-container .main-container-right .main-container-right-contact {
+  display: block;
+}
+#main .main-container .main-container-right .main-container-right-contact .profile-messenger {
+  margin: 10px 10px;
+  display: flex;
+}
+#main .main-container .main-container-right .main-container-right-contact .profile-messenger .contact {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #82858a;
+}
+#main .main-container .main-container-right .main-container-right-contact .profile-messenger .contact img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+#main .main-container .main-container-right .main-container-right-contact .profile-messenger p {
+  font-size: 17px;
+  font-weight: 600;
+  color: rgb(5, 5, 5);
+  padding: 10px;
+}/*# sourceMappingURL=facebook.css.map */
